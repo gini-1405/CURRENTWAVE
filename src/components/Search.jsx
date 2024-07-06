@@ -61,7 +61,7 @@ const Search = (props) => {
         <>
             {articles.length === 0 ? <Spinner /> :
                 <div className="container my-3" style={{ padding: "4rem" }}>
-                    <h2 id="heading" className="text-center">News Wallah - Search:  {query}</h2>
+                    <h2 id="heading" className="text-center">NewsNexus - Search:  {query}</h2>
                     <div className="row my-3" key={Math.random() + 1}>
                         {renderNews()}
                     </div>
