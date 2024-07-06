@@ -17,7 +17,7 @@ const Footer = () => {
         textDecoration: isHover ? 'underline' : 'none'
     }
     return (
-        <div style={{ color: '#000000' }} className="text-center">Made with ❤️ by <a href="https://ankanroy.in" target="_blank" rel="noreferrer" style={a} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Ankan</a></div>
+        <div style={{ color: '#000000' }} className="text-center">Made by <a target="_blank" rel="noreferrer" style={a} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>RISHABH GOEL</a></div>
     )
 }
 
