@@ -3,7 +3,7 @@ import React from 'react'
 function About() {
     return (
         <>
-            {document.title = "About Us - News Wallah"}
+            {document.title = "About Us - NEWSNEXUS"}
             <div className="container" style={{ padding: "5rem" }}>
                 <div className="row">
                     <div className="col-4 text-center">
