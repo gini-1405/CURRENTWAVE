@@ -8,7 +8,7 @@ const Search = (props) => {
     const [articles, setarticles] = useState([])
     const [query] = useState(queryParameters.get("query"))
     const navigate = useNavigate()
-    document.title = `${query} - News Wallah`
+    document.title = `${query} - NEWSNEXUS`
 
     useEffect(() => {
         if (query == null || query.length === 0) {
@@ -61,7 +61,7 @@ const Search = (props) => {
         <>
             {articles.length === 0 ? <Spinner /> :
                 <div className="container my-3" style={{ padding: "4rem" }}>
-                    <h2 id="heading" className="text-center">NewsNexus - Search:  {query}</h2>
+                    <h2 id="heading" className="text-center">NEWSNEXUS - Search:  {query}</h2>
                     <div className="row my-3" key={Math.random() + 1}>
                         {renderNews()}
                     </div>
