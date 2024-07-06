@@ -23,13 +23,13 @@ function Navbar() {
     <>
       <nav className="navbar navbar-dark bg-dark fixed-top">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">NEWSNEXUS</a>
+          <a className="navbar-brand" href="/">CurrentWave</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="offcanvas offcanvas-end text-bg-dark" tabIndex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
             <div className="offcanvas-header">
-              <h5 className="offcanvas-title" id="offcanvasDarkNavbarLabel">NEWSNEXUS</h5>
+              <h5 className="offcanvas-title" id="offcanvasDarkNavbarLabel">CurrentWave</h5>
               <button type="button" className="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" ref={close}></button>
             </div>
             <div className="offcanvas-body">
