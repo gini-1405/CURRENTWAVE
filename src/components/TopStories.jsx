@@ -49,7 +49,7 @@ function TopStories(props) {
     }
 
     useEffect(() => {
-        document.title = `${props.section === "home" ? '' : section} Headlines - News Wallah`
+        document.title = `${props.section === "home" ? '' : section} Headlines - NEWSNEXUS`
         async function fetchData() {
             try {
                 let url = `https://api.nytimes.com/svc/topstories/v2/${props.section}.json?api-key=${props.apiKey}`;
@@ -57,7 +57,7 @@ function TopStories(props) {
                 let parsedData = await data.json()
                 setArticles(parsedData.results)
                 setSection(parsedData.section)
-                document.title = `News Wallah - ${props.section === "home" ? '' : section} Headlines`
+                document.title = `NEWSNEXUS - ${props.section === "home" ? '' : section} Headlines`
             }
             catch (error) {
                 console.log(error)
@@ -71,7 +71,7 @@ function TopStories(props) {
         <>
             {articles.length === 0 ? <Spinner /> :
                 <div className="container my-3" style={{ padding: "4rem" }}>
-                    <h2 id="heading" className="text-center">NewsNexus - {props.section === "home" ? '' : section} Headlines</h2>
+                    <h2 id="heading" className="text-center">NEWSNEXUS - {props.section === "home" ? '' : section} Headlines</h2>
                     {
                         <InfiniteScroll
                             pageStart={0}
