@@ -71,7 +71,7 @@ function TopStories(props) {
         <>
             {articles.length === 0 ? <Spinner /> :
                 <div className="container my-3" style={{ padding: "4rem" }}>
-                    <h2 id="heading" className="text-center">News Wallah - {props.section === "home" ? '' : section} Headlines</h2>
+                    <h2 id="heading" className="text-center">NewsNexus - {props.section === "home" ? '' : section} Headlines</h2>
                     {
                         <InfiniteScroll
                             pageStart={0}
